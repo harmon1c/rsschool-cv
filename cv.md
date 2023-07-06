@@ -15,6 +15,11 @@ As my passion for information and communication technologies (ICT) grew, I pursu
 
 Currently, I am focused on enhancing my expertise in web development, leveraging modern tools and technologies. My ultimate goal is to acquire in-depth knowledge of modern web development techniques and utilize my skills to create highly functional applications.
 
+## **Education:**
+- 23/09/2014 Candidate of Sciences Odessa National Academy of Food Technologies
+- 09/2009 - 06/2010 MSc. Odessa State Academy of Refrigeration
+- 09/2004 - 06/2009 BSc. Odessa Technical College
+
 ## **Skills:**
 - JS
 - HTML & CSS (SCSS)
