@@ -22,4 +22,8 @@ Currently, I am focused on enhancing my expertise in web development, leveraging
 - Figma
 - Photoshop
 
-
+## **Languages:**
+- English (fluent)
+- Russian (native)
+- Urkainian (native)
+- German (profficient)
