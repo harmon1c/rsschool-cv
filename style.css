@@ -447,22 +447,22 @@ body {
   line-height: 25px;
 }
 .js-icon {
-  background-image: url(../assets/img/js-logo.svg);
+  background-image: url(./assets/img/js-logo.svg);
 }
 .html-icon {
-  background-image: url(../assets/img/html-logo.svg);
+  background-image: url(./assets/img/html-logo.svg);
 }
 .php-icon {
-  background-image: url(../assets/img/PHP-logo.svg);
+  background-image: url(./assets/img/PHP-logo.svg);
 }
 .git-icon {
-  background-image: url(../assets/img/github-logo.svg);
+  background-image: url(./assets/img/github-logo.svg);
 }
 .gulp-icon {
-  background-image: url(../assets/img/gulp-logo.svg);
+  background-image: url(./assets/img/gulp-logo.svg);
 }
 .figma-icon {
-  background-image: url(../assets/img/figma-logo.svg);
+  background-image: url(./assets/img/figma-logo.svg);
 }
 
 .main__content {
@@ -655,16 +655,16 @@ body {
   height: 16px;
 }
 .footer__social-link--facebook::before {
-  background-image: url(../assets/img/facebook.svg);
+  background-image: url(./assets/img/facebook.svg);
 }
 .footer__social-link--telegram::before {
-  background-image: url(../assets/img/telegram-logo.svg);
+  background-image: url(./assets/img/telegram-logo.svg);
   width: 14px;
   height: 14px;
   top: 4px;
 }
 .footer__social-link--email::before {
-  background-image: url(../assets/img/envelope.svg);
+  background-image: url(./assets/img/envelope.svg);
   width: 16px;
   height: 12px;
   top: 4px;
