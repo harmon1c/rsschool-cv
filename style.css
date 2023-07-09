@@ -443,22 +443,22 @@ body {
   color: #363838;
   line-height: 25px;
 }
-.skills .js-icon {
+.js-icon {
   background-image: url('../assets/img/js-logo.svg.');
 }
-.skills .html-icon {
+.html-icon {
   background-image: url('../assets/img/html-logo.svg');
 }
-.skills .php-icon {
+.php-icon {
   background-image: url('../assets/img/PHP-logo.svg');
 }
-.skills .git-icon {
+.git-icon {
   background-image: url('../assets/img/github-logo.svg');
 }
-.skills .gulp-icon {
+.gulp-icon {
   background-image: url('../assets/img/gulp-logo.svg');
 }
-.skills .figma-icon {
+.figma-icon {
   background-image: url('../assets/img/figma-logo.svg');
 }
 
