@@ -444,22 +444,22 @@ body {
   line-height: 25px;
 }
 .skills .js-icon {
-  background-image: url(/assets/img/js-logo.svg);
+  background-image: url('../assets/img/js-logo.svg.');
 }
 .skills .html-icon {
-  background-image: url(/assets/img/html-logo.svg);
+  background-image: url('../assets/img/html-logo.svg');
 }
 .skills .php-icon {
-  background-image: url(/assets/img/PHP-logo.svg);
+  background-image: url('../assets/img/PHP-logo.svg');
 }
 .skills .git-icon {
-  background-image: url(/assets/img/github-logo.svg);
+  background-image: url('../assets/img/github-logo.svg');
 }
 .skills .gulp-icon {
-  background-image: url(/assets/img/gulp-logo.svg);
+  background-image: url('../assets/img/gulp-logo.svg');
 }
 .skills .figma-icon {
-  background-image: url(/assets/img/figma-logo.svg);
+  background-image: url('../assets/img/figma-logo.svg');
 }
 
 .main__content {
