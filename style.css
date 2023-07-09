@@ -337,6 +337,9 @@ body {
   text-shadow: 1px 1px 2px #130202;
 }
 .code__sample {
+  max-width: 710px;
+  margin: 0 auto;
+  padding: 0 15px;
   font-family: "Courier New", monospace;
   font-size: 14px;
   overflow-x: auto;
@@ -444,22 +447,22 @@ body {
   line-height: 25px;
 }
 .js-icon {
-  background-image: url('../assets/img/js-logo.svg.');
+  background-image: url(../assets/img/js-logo.svg);
 }
 .html-icon {
-  background-image: url('../assets/img/html-logo.svg');
+  background-image: url(../assets/img/html-logo.svg);
 }
 .php-icon {
-  background-image: url('../assets/img/PHP-logo.svg');
+  background-image: url(../assets/img/PHP-logo.svg);
 }
 .git-icon {
-  background-image: url('../assets/img/github-logo.svg');
+  background-image: url(../assets/img/github-logo.svg);
 }
 .gulp-icon {
-  background-image: url('../assets/img/gulp-logo.svg');
+  background-image: url(../assets/img/gulp-logo.svg);
 }
 .figma-icon {
-  background-image: url('../assets/img/figma-logo.svg');
+  background-image: url(../assets/img/figma-logo.svg);
 }
 
 .main__content {
