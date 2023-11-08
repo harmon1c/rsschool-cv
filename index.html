@@ -126,20 +126,20 @@
                           <span class="code__variable">$totalWeight</span> = 0;
                           <span class="code__comment">// new user limitations</span>
                           <span class="code__variable">$newExpertLimitations</span> = [
-                            <span class="code__string">"canAttachFiles"</span> => <span class="code__keyword-boolean">false</span>,
-                            <span class="code__string">"maxConcurrentOrders"</span> => 4,
-                            <span class="code__string">"hasForumAccess"</span> => <span class="code__keyword-boolean">false</span>,
+                            <span class="code__string">"canAttachFiles"</span> =&gt; <span class="code__keyword-boolean">false</span>,
+                            <span class="code__string">"maxConcurrentOrders"</span> =&gt; 4,
+                            <span class="code__string">"hasForumAccess"</span> =&gt; <span class="code__keyword-boolean">false</span>,
                           ];
                           <span class="code__comment">// existing user limitations</span>
-                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'orders_completed'</span>] > 100) {
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'orders_completed'</span>] &gt; 100) {
                             <span class="code__variable">$newExpertLimitations</span>[<span class="code__string">'canAttachFiles'</span>] = <span class="code__keyword-boolean">true</span>;
-                            <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'orders_completed'</span>] > 200) {
+                            <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'orders_completed'</span>] &gt; 200) {
                               <span class="code__variable">$newExpertLimitations</span>[<span class="code__string">'maxConcurrentOrders'</span>] = <span class="code__keyword-null">null</span>;
                               <span class="code__variable">$newExpertLimitations</span>[<span class="code__string">'hasForumAccess'</span>] = <span class="code__keyword-boolean">true</span>;
                             }
                           }
                           <span class="code__comment">// order processing</span>
-                          <span class="code__keyword">foreach</span> (<span class="code__variable">$orders</span> <span class="code__keyword">as</span> <span class="code__variable">$i</span> => <span class="code__variable">$order</span>) {
+                          <span class="code__keyword">foreach</span> (<span class="code__variable">$orders</span> <span class="code__keyword">as</span> <span class="code__variable">$i</span> =&gt; <span class="code__variable">$order</span>) {
                             <span class="code__comment">// base rating</span>
                             <span class="code__variable">$xi</span> = <span class="code__variable">$order</span>[<span class="code__string">'rating'</span>] <span class="code__operator">??</span> 5;
                           <span class="code__comment">// penalties</span>
@@ -165,13 +165,13 @@
                           <span class="code__variable">$rating</span> += <span class="code__variable">$xi</span> * <span class="code__variable">$alpha_i</span>;
                           <span class="code__variable">$totalWeight</span> += <span class="code__variable">$alpha_i</span>;
                           <span class="code__comment">// additional coeffs</span>
-                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'order_refusal_rate'</span>] > 0.3) <span class="code__variable">$totalWeight</span> -= 0.5;
-                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'order_confirmation_rate'</span>] > 0.95) <span class="code__variable">$totalWeight</span> += 0.1;
-                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'redistribution_rate'</span>] > 0.2) <span class="code__variable">$totalWeight</span> -= <span class="code__function">quote</span>(<span class="code__string">"function calculateRating(\$orders, \$expert) {", "return \$rating / \$totalWeight;\n}\n?>"</span>);
-                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'redistribution_rate'</span>] > 0.2) <span class="code__variable">$totalWeight</span> -= 1;
-                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'redistribution_rate'</span>] > 0.1) <span class="code__variable">$totalWeight</span> -= 0.3;
-                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'late_delivery_rate'</span>] > 0.2) <span class="code__variable">$totalWeight</span> -= 0.4;
-                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'politeness_positive_rate'</span>] > 0.7) <span class="code__variable">$totalWeight</span> += 0.2;
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'order_refusal_rate'</span>] &gt; 0.3) <span class="code__variable">$totalWeight</span> -= 0.5;
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'order_confirmation_rate'</span>] &gt; 0.95) <span class="code__variable">$totalWeight</span> += 0.1;
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'redistribution_rate'</span>] &gt; 0.2) <span class="code__variable">$totalWeight</span> -= <span class="code__function">quote</span>(<span class="code__string">"function calculateRating(\$orders, \$expert) {", "return \$rating / \$totalWeight;\n}\n?>"</span>);
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'redistribution_rate'</span>] &gt; 0.2) <span class="code__variable">$totalWeight</span> -= 1;
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'redistribution_rate'</span>] &gt; 0.1) <span class="code__variable">$totalWeight</span> -= 0.3;
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'late_delivery_rate'</span>] &gt; 0.2) <span class="code__variable">$totalWeight</span> -= 0.4;
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'politeness_positive_rate'</span>] &gt; 0.7) <span class="code__variable">$totalWeight</span> += 0.2;
                           <span class="code__comment">// total rating</span>
                           <span class="code__keyword">return</span> <span class="code__variable">$rating</span> / <span class="code__variable">$totalWeight</span>;
                         }
