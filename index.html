@@ -6,7 +6,7 @@
     <title>Oleksii Ostapenko Web-Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
@@ -153,14 +153,14 @@
                           <span class="code__comment">// order value calculation</span>
                           <span class="code__variable">$alpha_i</span> = 0;
                           <span class="code__keyword-if">if</span> (<span class="code__variable">$order</span>[<span class="code__string">'price'</span>] &lt; 100) <span class="code__variable">$alpha_i</span> = 0.1;
-                          <span class="code__keyword-elseif">elseif</span> (<span class="code__variable">$order</span>[<span class="code__string">'price'</span>] &gt;= 100 && <span class="code__variable">$order</span>[<span class="code__string">'price'</span>] &lt; 1000) <span class="code__variable">$alpha_i</span> = 0.9;
+                          <span class="code__keyword-elseif">elseif</span> (<span class="code__variable">$order</span>[<span class="code__string">'price'</span>] &gt;= 100 &amp;&amp; <span class="code__variable">$order</span>[<span class="code__string">'price'</span>] &lt; 1000) <span class="code__variable">$alpha_i</span> = 0.9;
                           <span class="code__keyword-elseif">elseif</span> (<span class="code__variable">$order</span>[<span class="code__string">'price'</span>] &gt;= 5000) <span class="code__variable">$alpha_i</span> = 1.5;
                           <span class="code__comment">// additional influencing factors</span>
                           <span class="code__keyword-if">if</span> (!<span class="code__variable">$order</span>[<span class="code__string">'user_rating'</span>]) <span class="code__variable">$alpha_i</span> = 0;
                           <span class="code__keyword-if">if</span> (<span class="code__variable">$order</span>[<span class="code__string">'premium'</span>]) <span class="code__variable">$alpha_i</span> *= 2;
                           <span class="code__comment">// time coefficient</span>
                           <span class="code__keyword-if">if</span> (<span class="code__variable">$i</span> &gt; 40 &amp;&amp; <span class="code__variable">$i</span> &lt;= 100) <span class="code__variable">$alpha_i</span> *= 1 - 0.005 * (<span class="code__variable">$i</span> - 40);
-                          <span class="code__keyword-elseif">elseif</span> (<span class="code__variable">$i</span> > 100) <span class="code__variable">$alpha_i</span> *= 0.5 - 0.005 * (<span class="code__variable">$i</span> - 100);
+                          <span class="code__keyword-elseif">elseif</span> (<span class="code__variable">$i</span> &gt; 100) <span class="code__variable">$alpha_i</span> *= 0.5 - 0.005 * (<span class="code__variable">$i</span> - 100);
                           <span class="code__comment">// overal rating calculation</span>
                           <span class="code__variable">$rating</span> += <span class="code__variable">$xi</span> * <span class="code__variable">$alpha_i</span>;
                           <span class="code__variable">$totalWeight</span> += <span class="code__variable">$alpha_i</span>;
