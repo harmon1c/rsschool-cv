@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oleksii Ostapenko Web-Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="assets/img/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/img/android-chrome-192x192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="assets/img/android-chrome-512x512.png" sizes="512x512" type="image/png">
+    <link rel="icon" href="assets/img/apple-touch-icon.png" sizes="180x180" type="image/png">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div id="menu">
+              <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+              </div>
+              <nav class="nav" id="nav">
+                <ul class="nav__list">
+                  <li class="nav__list-item"><a class="nav__list-link" href="#about">About Me</a></li>
+                  <li class="nav__list-item"><a class="nav__list-link" href="#skills">Skills</a></li>
+                  <li class="nav__list-item"><a class="nav__list-link" href="#projects">Projects</a></li>
+                  <li class="nav__list-item"><a class="nav__list-link" href="#languages">Languages</a></li>
+                  <li class="nav__list-item"><a class="nav__list-link" href="#education">Education</a></li>
+                  <li class="nav__list-item"><a class="nav__list-link" href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="top">
+           <div class="top__inner">
+             <div class="top__inner-info">
+               <h1 class="top__inner-title">
+                 Oleksii Ostapenko
+                </h1>
+                <h2 class="top__inner-text">
+                  Web-Developer
+                </h2>
+              </div>
+              <div class="top__photo">
+                <img class="top__photo-img" src="assets/img/foto.jpg" alt="avatar image">
+              </div>
+            </div>
+        </section>
+        <div class="main__container">
+          <aside class="aside">
+            <section class="education" id="education">
+              <h3 class="education__title">Education</h3>
+              <ul class="education__list">
+                <li class="education__list-item">
+                  <p class="education__item-text">23/09/2014 - Candidate of Sciences. Odessa National Academy of Food Technologies</p>
+                </li>
+                <li class="education__list-item">
+                  <p class="education__item-text">09/2009 - 06/2010 MSc. Odessa State Academy of Refrigeration</p>
+                </li>
+                <li class="education__list-item">
+                  <p class="education__item-text">09/2004 - 06/2009 BSc. Odessa Technical College</p>
+                </li>
+              </ul>
+            </section>
+            <section class="skills" id="skills">
+              <h3 class="skills__title">Skills</h3>
+              <ul class="skills__list">
+                <li class="skills__list-item js-icon">
+                  <p class="skills__item-text">JavaScript</p>
+                </li>
+                <li class="skills__list-item html-icon">
+                  <p class="skills__item-text">HTML &amp; CSS (SCSS)</p>
+                </li>
+                <li class="skills__list-item php-icon">
+                  <p class="skills__item-text">PHP basics</p>
+                </li>
+                <li class="skills__list-item git-icon">
+                  <p class="skills__item-text">Git</p>
+                </li>
+                <li class="skills__list-item gulp-icon">
+                  <p class="skills__item-text">Gulp</p>
+                </li>
+                <li class="skills__list-item figma-icon">
+                  <p class="skills__item-text">Photoshop, Figma</p>
+                </li>
+              </ul>
+            </section>
+          </aside>
+          <section class="about" id="about">
+            <div class="about__info">
+              <h3 class="about__title">About Me</h3>
+              <p class="about__text">
+                My career started during my employment at the university as an assistant professor in the Refrigeration Systems department. I developed a multipage website for our department, showcasing our work and research.
+              </p>
+              <p class="about__text">
+               As my passion for information and communication technologies (ICT) grew, I pursued further knowledge in this field. I obtained a Microsoft Certified Educator Certificate and actively participated in organizing the Microsoft IT Academy for students, helping them expand their ICT skills.
+              </p>
+              <p class="about__text">
+               Currently, I am focused on enhancing my expertise in web development, leveraging modern tools and technologies. My ultimate goal is to acquire in-depth knowledge of modern web development techniques and utilize my skills to create highly functional applications.
+              </p>
+            </div>
+            <div class="main__content">
+              <section class="code" id="code">
+                <div class="code__info">
+                  <h3 class="code__title">Code Example</h3>
+                  <details>
+                    <summary class="code__text">From rating calculator:</summary>
+                    <pre class="code__sample code">
+                      <code>
+                        <span class="code__keyword-function">function</span> <span class="code__function-name">calculateRating</span>(<span class="code__parameter">$orders</span>, <span class="code__parameter">$expert</span>) {
+                          <span class="code__comment">// initial value</span>
+                          <span class="code__variable">$rating</span> = 0;
+                          <span class="code__variable">$totalWeight</span> = 0;
+                          <span class="code__comment">// new user limitations</span>
+                          <span class="code__variable">$newExpertLimitations</span> = [
+                            <span class="code__string">"canAttachFiles"</span> =&gt; <span class="code__keyword-boolean">false</span>,
+                            <span class="code__string">"maxConcurrentOrders"</span> =&gt; 4,
+                            <span class="code__string">"hasForumAccess"</span> =&gt; <span class="code__keyword-boolean">false</span>,
+                          ];
+                          <span class="code__comment">// existing user limitations</span>
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'orders_completed'</span>] &gt; 100) {
+                            <span class="code__variable">$newExpertLimitations</span>[<span class="code__string">'canAttachFiles'</span>] = <span class="code__keyword-boolean">true</span>;
+                            <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'orders_completed'</span>] &gt; 200) {
+                              <span class="code__variable">$newExpertLimitations</span>[<span class="code__string">'maxConcurrentOrders'</span>] = <span class="code__keyword-null">null</span>;
+                              <span class="code__variable">$newExpertLimitations</span>[<span class="code__string">'hasForumAccess'</span>] = <span class="code__keyword-boolean">true</span>;
+                            }
+                          }
+                          <span class="code__comment">// order processing</span>
+                          <span class="code__keyword">foreach</span> (<span class="code__variable">$orders</span> <span class="code__keyword">as</span> <span class="code__variable">$i</span> =&gt; <span class="code__variable">$order</span>) {
+                            <span class="code__comment">// base rating</span>
+                            <span class="code__variable">$xi</span> = <span class="code__variable">$order</span>[<span class="code__string">'rating'</span>] <span class="code__operator">??</span> 5;
+                          <span class="code__comment">// penalties</span>
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$order</span>[<span class="code__string">'delivered_late'</span>]) <span class="code__variable">$xi</span> -= 1;
+                          <span class="code__keyword-if">if</span> (!<span class="code__variable">$order</span>[<span class="code__string">'confirmed_at_50_percent'</span>]) <span class="code__variable">$xi</span> = 2;
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$order</span>[<span class="code__string">'redistributed'</span>]) {
+                            <span class="code__keyword-if">if</span> (<span class="code__variable">$order</span>[<span class="code__string">'redistribution'</span>] == 100) <span class="code__variable">$xi</span> = 2;
+                            <span class="code__keyword-elseif">elseif</span> (<span class="code__variable">$order</span>[<span class="code__string">'redistribution'</span>] == 50) <span class="code__variable">$xi</span> = 3; <span class="code__comment">// Assuming, that 50/50 gives rating 3</span>
+                            <span class="code__keyword-else">else</span> <span class="code__variable">$xi</span> = 4;
+                          }
+                          <span class="code__comment">// order value calculation</span>
+                          <span class="code__variable">$alpha_i</span> = 0;
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$order</span>[<span class="code__string">'price'</span>] &lt; 100) <span class="code__variable">$alpha_i</span> = 0.1;
+                          <span class="code__keyword-elseif">elseif</span> (<span class="code__variable">$order</span>[<span class="code__string">'price'</span>] &gt;= 100 &amp;&amp; <span class="code__variable">$order</span>[<span class="code__string">'price'</span>] &lt; 1000) <span class="code__variable">$alpha_i</span> = 0.9;
+                          <span class="code__keyword-elseif">elseif</span> (<span class="code__variable">$order</span>[<span class="code__string">'price'</span>] &gt;= 5000) <span class="code__variable">$alpha_i</span> = 1.5;
+                          <span class="code__comment">// additional influencing factors</span>
+                          <span class="code__keyword-if">if</span> (!<span class="code__variable">$order</span>[<span class="code__string">'user_rating'</span>]) <span class="code__variable">$alpha_i</span> = 0;
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$order</span>[<span class="code__string">'premium'</span>]) <span class="code__variable">$alpha_i</span> *= 2;
+                          <span class="code__comment">// time coefficient</span>
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$i</span> &gt; 40 &amp;&amp; <span class="code__variable">$i</span> &lt;= 100) <span class="code__variable">$alpha_i</span> *= 1 - 0.005 * (<span class="code__variable">$i</span> - 40);
+                          <span class="code__keyword-elseif">elseif</span> (<span class="code__variable">$i</span> &gt; 100) <span class="code__variable">$alpha_i</span> *= 0.5 - 0.005 * (<span class="code__variable">$i</span> - 100);
+                          <span class="code__comment">// overal rating calculation</span>
+                          <span class="code__variable">$rating</span> += <span class="code__variable">$xi</span> * <span class="code__variable">$alpha_i</span>;
+                          <span class="code__variable">$totalWeight</span> += <span class="code__variable">$alpha_i</span>;
+                          <span class="code__comment">// additional coeffs</span>
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'order_refusal_rate'</span>] &gt; 0.3) <span class="code__variable">$totalWeight</span> -= 0.5;
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'order_confirmation_rate'</span>] &gt; 0.95) <span class="code__variable">$totalWeight</span> += 0.1;
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'redistribution_rate'</span>] &gt; 0.2) <span class="code__variable">$totalWeight</span> -= <span class="code__function">quote</span>(<span class="code__string">"function calculateRating(\$orders, \$expert) {", "return \$rating / \$totalWeight;\n}\n?&gt;"</span>);
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'redistribution_rate'</span>] &gt; 0.2) <span class="code__variable">$totalWeight</span> -= 1;
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'redistribution_rate'</span>] &gt; 0.1) <span class="code__variable">$totalWeight</span> -= 0.3;
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'late_delivery_rate'</span>] &gt; 0.2) <span class="code__variable">$totalWeight</span> -= 0.4;
+                          <span class="code__keyword-if">if</span> (<span class="code__variable">$expert</span>[<span class="code__string">'politeness_positive_rate'</span>] &gt; 0.7) <span class="code__variable">$totalWeight</span> += 0.2;
+                          <span class="code__comment">// total rating</span>
+                          <span class="code__keyword">return</span> <span class="code__variable">$rating</span> / <span class="code__variable">$totalWeight</span>;
+                        }
+                      }
+                      </code>
+                    </pre>
+                  </details>
+                </div>
+              </section>
+              <section class="languages" id="languages">
+                <div class="languages__info">
+                  <h3 class="languages__title">Languages</h3>
+                  <ul class="languages__list">
+                    <li class="languages__list-item">
+                      <p class="languages__text">English (Fluent)</p>
+                    </li>
+                    <li class="languages__list-item">
+                      <p class="languages__text">Ukrainian (Native)</p>
+                    </li>
+                    <li class="languages__list-item">
+                      <p class="languages__text">Russian (Native)</p>
+                    </li>
+                    <li class="languages__list-item">
+                      <p class="languages__text">German (Pre-Intermediate)</p>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </section>
+        </div>
+        <section class="projects-box">
+          <div class="container">
+            <h3 class="projects-box__title">
+              My Projects
+            </h3>
+            <div class="projects-box__items">
+              <div class="projects-box__item">
+                <a class="projects-box__img-link" href="#">
+                  <img class="projects-box__images" src="assets/img/placeholder-img.jpg" alt="project image">
+                </a>
+                <div class="projects-box__links">
+                  <a class="projects-box__atributes" href="#">In progress...</a> |
+                  <a class="projects-box__theme" href="#">In progress...</a>
+                </div>
+                <a class="projects-box__item-titlelink" href="#">
+                  <h4 class="projects-box__item-title">
+                    In progress...
+                  </h4>
+                </a>
+              </div>
+              <div class="projects-box__item">
+                <a class="projects-box__img-link" href="#">
+                  <img class="projects-box__images" src="assets/img/placeholder-img.jpg" alt="project image">
+                </a>
+                <div class="projects-box__links">
+                  <a class="projects-box__atributes" href="#">In progress...</a> |
+                  <a class="projects-box__theme" href="#">In progress...</a>
+                </div>
+                <a class="projects-box__item-titlelink" href="#">
+                  <h4 class="projects-box__item-title">
+                    In progress...
+                  </h4>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <section class="footer__content" id="contact">
+          <div class="container">
+            <div class="footer__inner">
+              <div class="footer__info">
+                <h6 class="footer__info-title">Contact Me</h6>
+                <p class="footer__info-text">Feel free to contact me at any time.
+                </p>
+                <a class="info-email" href="mailto:ostapenkosc@gmail.com">ostapenkosc@gmail.com</a>
+                <form class="footer__form">
+                  <input class="footer__form-input" type="email" placeholder="Contact me via E-mail">
+                  <button class="footer__form-button" type="submit">Send</button>
+                </form>
+              </div>
+              <ul class="footer__social">
+                <li class="footer__social-item">
+                  <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com/alex.ostapenko.33/">Facebook</a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link footer__social-link--telegram" href="https://t.me/tu_1ch">Telegram</a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link footer__social-link--email" href="mailto:ostapenkosc@gmail.com" target="_blank">E-mail</a>
+                </li>
+              </ul>
+              <nav class="footer__side">
+                <ul class="footer__side-list">
+                  <li class="footer__side-item">
+                    <a class="footer__side-link" href="https://github.com/harmon1c" target="_blank" rel="noopener">
+                      <img class="footer__side-image" src="assets/img/github-logo.svg" alt="github logo"></a>
+                  </li>
+                  <li class="footer__side-item">
+                    <a class="footer__side-link" href="https://rs.school/js/" target="_blank" rel="noopener">
+                      <img class="footer__side-image" src="assets/img/rs-school-logo.svg" alt="rsschool logo">
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </section>
+        <div class="footer__copyright">
+          <div class="container">
+            <p>© Oleksii Ostapenko, 2023</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
